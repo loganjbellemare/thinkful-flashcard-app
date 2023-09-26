@@ -38,18 +38,17 @@ export default function CardEdit() {
 
   //handle input changes to update state variables correctly
   const handleChange = ({ target }) => {
-    setFormData({
-      ...formData,
+    setCard({
+      ...card,
       [target.name]: target.value,
     });
   };
 
   //handle submission of form with createCard() function
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    updateCard(deckId, formData);
-    setFormData({ ...initialFormData });
-    history.pushState(`/decks/${deckId}`);
+    await updateCard(card);
+    history.push(`/decks/${deckId}`);
   };
 
   //render breadcrumb nav and CardCreateForm with card prop

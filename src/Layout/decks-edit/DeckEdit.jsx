@@ -12,23 +12,19 @@ export default function DeckEdit() {
     name: "",
     description: "",
   };
-  const [formData, setFormData] = useState({
-    name: deck.name,
-    description: deck.description,
-  });
+  const [formData, setFormData] = useState({ ...initialFormData });
   //handle changes made to input fields
   const handleChange = ({ target }) => {
-    setFormData({
-      ...formData,
-      [target]: target.value,
+    setDeck({
+      ...deck,
+      [target.name]: target.value,
     });
   };
 
   //handle submission of new form using updateDeck from API
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    updateDeck(formData);
-    setFormData({ ...initialFormData });
+    await updateDeck(deck);
     history.push(`/decks/${deck.id}`);
   };
 
