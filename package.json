@@ -12,6 +12,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.0"
   },
+  "homepage": "https://loganjbellemare.github.io/thinkful-flashcard-app/",
   "scripts": {
     "build": "react-scripts build && mv build docs",
     "docker:build": "docker image build . -t thinkful-ed/zid-fe-project-flashcards-01-qualified",
