@@ -6,6 +6,8 @@
 
 This application is an exercise in using React to render components and React Router for client-side routing.
 
+Deployed site can be viewed [here](https://thinkful-flashcard-app-fhma.onrender.com)!
+
 ## Main Features -
 
 ### Home Page
