@@ -9,11 +9,6 @@ export default function CardEdit() {
   const cardId = useParams().cardId;
   const [deck, setDeck] = useState({});
   const [card, setCard] = useState({});
-  const initialFormData = {
-    front: "",
-    back: "",
-  };
-  const [formData, setFormData] = useState({ ...initialFormData });
   const history = useHistory();
 
   //load deck from API

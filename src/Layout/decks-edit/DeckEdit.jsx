@@ -8,11 +8,6 @@ export default function DeckEdit() {
   const deckId = useParams().deckId;
   const [deck, setDeck] = useState({});
   const history = useHistory();
-  const initialFormData = {
-    name: "",
-    description: "",
-  };
-  const [formData, setFormData] = useState({ ...initialFormData });
   //handle changes made to input fields
   const handleChange = ({ target }) => {
     setDeck({
