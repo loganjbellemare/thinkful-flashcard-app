@@ -32,7 +32,7 @@ This application is an exercise in using React to render components and React Ro
 ### View Deck Page
 
 - clicking 'View' button on any deck brings user to deck view page
-  ![](/screenshots/deck-view-screen/deck-view-screen.png)  
+  ![](/screenshots/deck-view-screen/deck-view-screen.png)
 - shows information on selected deck, allowing user to edit, delete, and study deck, or add cards to deck
 - displays a list of all cards in deck, allowing user to edit or delete them
 - edit deck button brings user to a form with info about selected deck loaded into form
